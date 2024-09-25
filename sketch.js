@@ -1,7 +1,6 @@
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(100, 100, 100);
+function tile(x, y) {
 
+  translate(x, y)
   let trans = 255;
   let pink = color(245, 0, 79, trans);
   let purple = color(71, 0, 145, trans);
@@ -57,7 +56,18 @@ function setup() {
     ellipse(0, 0, d);
   }
   pop()
-  
+
+}
+
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background(100, 100, 100);
+
+  // draw a row of tiles
+  for (let x = 0; x < width; x += 24) {
+    tile(x, 0)
+  }
 }
 
 function draw() {}
