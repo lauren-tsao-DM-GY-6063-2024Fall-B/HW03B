@@ -11,11 +11,11 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(200, 200, 200);
   angleMode(DEGREES);
-  
-  let orange = color(255, 136, 91)
-  let beige = color (255, 229, 207)
-  let green = color(85, 124, 86)
-  let olive = color(51, 55, 44)
+
+  let orange = color(255, 136, 91);
+  let beige = color(255, 229, 207);
+  let green = color(85, 124, 86);
+  let olive = color(51, 55, 44);
 
   // column of 01_square row 01
   for (let y = 0; y < height; y += 320) {
