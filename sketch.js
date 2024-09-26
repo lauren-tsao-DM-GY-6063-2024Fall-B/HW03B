@@ -152,6 +152,16 @@ function setup() {
         circle(x, y, 160);
       }
     }
+
+    // column of 04_square row - arc
+  for (let y = 240; y < height; y += 320) {
+    //04_square row - semi-circle
+    for (let x = 400; x < width; x += 640) {
+      noStroke();
+      fill(0, 0, 0);
+      arc(x, y, 160, 160, 90, 180);
+    }
+  }
   
 
   // column of 04_square row - semi-circle 01
@@ -184,7 +194,17 @@ function setup() {
     }
   }
 
-  // column of 06_square row
+  // column of 05_square row 01
+  for (let y = 160; y < height; y += 320) {
+    // 05_square row
+    for (let x = 480; x < width; x += 640) {
+      noStroke();
+      fill(170, 170, 170);
+      square(x, y, 80);
+    }
+  }
+
+  // column of 06_square row 01
   for (let y = 0; y < height; y += 320) {
     // 06_square row
     for (let x = 400; x < width; x += 640) {
@@ -194,37 +214,7 @@ function setup() {
     }
   }
 
-  // column of 06_square row - triangle 01
-  for (let y = 0; y < height; y += 320) {
-    // 06_square row - triangle
-    for (let x = 400; x < width; x += 640) {
-      noStroke();
-      fill(220, 0, 200);
-      triangle03(x, y, 80, 40, 45, 1.415);
-    }
-  }
-
-    // column of 06_square row - triangle 02
-    for (let y = 160; y < height; y += 320) {
-      // 06_square row - triangle
-      for (let x = 640; x < width; x += 640) {
-        noStroke();
-        fill(220, 0, 200);
-        triangle03(x, y, 80, 40, 90, 2);
-      }
-    }
-
-    // column of 06_square row - triangle 03
-    for (let y = 320; y < height; y += 320) {
-      // 06_square row - triangle
-      for (let x = 640; x < width; x += 640) {
-        noStroke();
-        fill(225, 225, 0);
-        triangle03(x, y, 80, 40, 225, 2.83);
-      }
-    }
-
-  // column of 07_square row
+  // column of 07_square row 01
   for (let y = 80; y < height; y += 320) {
     // 07_square row
     for (let x = 320; x < width; x += 640) {
@@ -233,12 +223,64 @@ function setup() {
       square(x, y, 80);
     }
   }
-  // column of 08_square row
+
+  // column of 07_square row 02
+  for (let y = 240; y < height; y += 320) {
+    // 07_square row
+    for (let x = 480; x < width; x += 640) {
+      noStroke();
+      fill(100, 100, 100);
+      square(x, y, 80);
+    }
+  }
+  
+
+  // column of 08_square row 01
   for (let y = 80; y < height; y += 320) {
     // 08_square row
     for (let x = 400; x < width; x += 640) {
       noStroke();
       fill(170, 170, 170);
+      square(x, y, 80);
+    }
+  }
+
+  // column of 08_square row 02
+  for (let y = 240; y < height; y += 320) {
+    // 08_square row
+    for (let x = 560; x < width; x += 640) {
+      noStroke();
+      fill(170, 170, 170);
+      square(x, y, 80);
+    }
+  }
+
+    // column of 06_square row - triangle 01
+    for (let y = 0; y < height; y += 320) {
+      // 06_square row - triangle
+      for (let x = 400; x < width; x += 640) {
+        noStroke();
+        fill(220, 0, 200);
+        triangle03(x, y, 80, 40, 45, 1.415);
+      }
+    }
+    
+  // column of 06_square row - triangle 02
+for (let y = 160; y < height; y += 320) {
+  // 06_square row - triangle
+  for (let x = 480; x < width; x += 640) {
+    noStroke();
+    fill(220, 0, 200);
+    triangle03(x, y, 80, 40, 45, 2.83);
+  }
+}
+
+  // column of 06_square row 02
+  for (let y = 160; y < height; y += 320) {
+    // 06_square row
+    for (let x = 560; x < width; x += 640) {
+      noStroke();
+      fill(120, 120, 120);
       square(x, y, 80);
     }
   }
