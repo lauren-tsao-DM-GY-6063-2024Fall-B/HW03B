@@ -1,64 +1,101 @@
+function triangle03(x, y, w, h, r, s) {
+  push();
+  translate(x, y);
+  rotate(r);
+  scale(s);
+  triangle(0, 0, h, -h, w, 0);
+  pop();
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(200, 200, 200);
+  angleMode(DEGREES);
 
-  // draw a row of 01_square01
+  //Grid Base
+  // 01_square row
   for (let x = 0; x < width; x += 640) {
     noStroke();
     fill(100, 100, 100);
     square(x, 0, 80);
   }
 
-  // draw a row of 01_square02
+  // 01_square row - arc
+  for (let x = 0; x < width; x += 640) {
+    noStroke();
+    fill(200, 200, 200);
+    arc(x, 0, 160, 160, 0, 90);
+  }
+
+  // draw a row of 02_square
   for (let x = 80; x < width; x += 640) {
     noStroke();
     fill(120, 120, 120);
     square(x, 0, 80);
   }
 
-  // draw a row of 01_rect
+  // 03_rect row
   for (let x = 0; x < width; x += 640) {
     noStroke();
     fill(170, 170, 170);
     rect(x, 80, 160, 80);
   }
 
-  // draw a row of 02_square
+  // 03_rect row triangle
+  for (let x = 0; x < width; x += 640) {
+    noStroke();
+    fill(200, 200, 200);
+    triangle03(x, 160, 160, 80, 0);
+  }
+
+  // draw a row of 04_square
   for (let x = 160; x < width; x += 320) {
     noStroke();
     fill(150, 150, 150);
     square(x, 0, 160);
   }
 
-  // draw a row of 03_square01
+  // draw a row of 04_circle
+  for (let x = 240; x < width; x += 640) {
+    noStroke();
+    fill(200, 200, 200);
+    circle(x, 80, 160);
+  }
+
+  // 05_square row
   for (let x = 320; x < width; x += 640) {
     noStroke();
     fill(170, 170, 170);
     square(x, 0, 80);
   }
 
-  // draw a row of 03_square02
-  for (let x = 320; x < width; x += 640) {
-    noStroke();
-    fill(100, 100, 100);
-    square(x, 80, 80);
-  }
-
-  // draw a row of 03_square03
+  // draw a row of 06_square
   for (let x = 400; x < width; x += 640) {
     noStroke();
     fill(120, 120, 120);
     square(x, 0, 80);
   }
 
-  // draw a row of 03_square01
+  // 06_square row triangle
+  for (let x = 400; x < width; x += 640) {
+    noStroke();
+    fill(220, 0, 200);
+    triangle03(x, 0, 80, 40, 45, 1.4);
+  }
+
+  // draw a row of 07_square
+  for (let x = 320; x < width; x += 640) {
+    noStroke();
+    fill(100, 100, 100);
+    square(x, 80, 80);
+  }
+
+  // draw a row of 08_square
   for (let x = 400; x < width; x += 640) {
     noStroke();
     fill(170, 170, 170);
     square(x, 80, 80);
   }
-
-  
 }
 
 function draw() {}
