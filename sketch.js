@@ -11,13 +11,18 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(200, 200, 200);
   angleMode(DEGREES);
+  
+  let orange = color(255, 136, 91)
+  let beige = color (255, 229, 207)
+  let green = color(85, 124, 86)
+  let olive = color(51, 55, 44)
 
   // column of 01_square row 01
   for (let y = 0; y < height; y += 320) {
     // 01_square row
     for (let x = 0; x < width; x += 640) {
       noStroke();
-      fill(100, 100, 100);
+      fill(olive);
       square(x, y, 80);
     }
   }
@@ -27,7 +32,7 @@ function setup() {
     // 01_square row
     for (let x = 160; x < width; x += 640) {
       noStroke();
-      fill(100, 100, 100);
+      fill(olive);
       square(x, y, 80);
     }
   }
@@ -37,7 +42,7 @@ function setup() {
     // 01_square row - arc
     for (let x = 0; x < width; x += 640) {
       noStroke();
-      fill(200, 200, 200);
+      fill(orange);
       arc(x, y, 160, 160, 0, 90);
     }
   }
@@ -47,7 +52,7 @@ function setup() {
     // 01_square row - arc
     for (let x = 160; x < width; x += 640) {
       noStroke();
-      fill(200, 200, 200);
+      fill(orange);
       arc(x, y, 160, 160, 0, 90);
     }
   }
@@ -57,7 +62,7 @@ function setup() {
     // 02_square row
     for (let x = 80; x < width; x += 640) {
       noStroke();
-      fill(120, 120, 120);
+      fill(beige);
       square(x, y, 80);
     }
   }
@@ -67,7 +72,7 @@ function setup() {
     // 02_square row
     for (let x = 240; x < width; x += 640) {
       noStroke();
-      fill(120, 120, 120);
+      fill(beige);
       square(x, y, 80);
     }
   }
@@ -77,7 +82,7 @@ function setup() {
     // 03_rect row
     for (let x = 0; x < width; x += 640) {
       noStroke();
-      fill(170, 170, 170);
+      fill(olive);
       rect(x, y, 160, 80);
     }
   }
@@ -87,7 +92,7 @@ function setup() {
     // 03_rect row
     for (let x = 160; x < width; x += 640) {
       noStroke();
-      fill(170, 170, 170);
+      fill(olive);
       rect(x, y, 160, 80);
     }
   }
@@ -97,7 +102,7 @@ function setup() {
     // 03_rect row - triangle
     for (let x = 0; x < width; x += 640) {
       noStroke();
-      fill(200, 200, 200);
+      fill(green);
       triangle03(x, y, 160, 80, 0);
     }
   }
@@ -107,7 +112,7 @@ function setup() {
     // 03_rect row - triangle
     for (let x = 160; x < width; x += 640) {
       noStroke();
-      fill(200, 200, 200);
+      fill(green);
       triangle03(x, y, 160, 80, 0);
     }
   }
@@ -117,7 +122,7 @@ function setup() {
     // 04_square row
     for (let x = 160; x < width; x += 320) {
       noStroke();
-      fill(150, 150, 150);
+      fill(green);
       square(x, y, 160);
     }
   }
@@ -127,7 +132,7 @@ function setup() {
     // 04_square row
     for (let x = 0; x < width; x += 320) {
       noStroke();
-      fill(150, 150, 150);
+      fill(olive);
       square(x, y, 160);
     }
   }
@@ -137,7 +142,7 @@ function setup() {
     // 04_square row - circle
     for (let x = 240; x < width; x += 640) {
       noStroke();
-      fill(200, 200, 200);
+      fill(olive);
       circle(x, y, 160);
     }
   }
@@ -147,7 +152,7 @@ function setup() {
     // 04_square row - circle
     for (let x = 400; x < width; x += 640) {
       noStroke();
-      fill(200, 200, 200);
+      fill(orange);
       circle(x, y, 160);
     }
   }
@@ -157,7 +162,7 @@ function setup() {
     //04_square row - semi-circle
     for (let x = 400; x < width; x += 640) {
       noStroke();
-      fill(0, 0, 0);
+      fill(beige);
       arc(x, y, 160, 160, 90, 180);
     }
   }
@@ -167,7 +172,7 @@ function setup() {
     //04_square row - semi-circle
     for (let x = 480; x < width; x += 640) {
       noStroke();
-      fill(200, 200, 200);
+      fill(beige);
       arc(x, y, 160, 160, 270, 450);
     }
   }
@@ -177,7 +182,7 @@ function setup() {
     //04_square row - semi-circle
     for (let x = 80; x < width; x += 640) {
       noStroke();
-      fill(0, 0, 0);
+      fill(beige);
       arc(x, y, 160, 160, 270, 450);
     }
   }
@@ -187,7 +192,7 @@ function setup() {
     // 05_square row
     for (let x = 320; x < width; x += 640) {
       noStroke();
-      fill(170, 170, 170);
+      fill(olive);
       square(x, y, 80);
     }
   }
@@ -197,7 +202,7 @@ function setup() {
     // 05_square row
     for (let x = 480; x < width; x += 640) {
       noStroke();
-      fill(170, 170, 170);
+      fill(green);
       square(x, y, 80);
     }
   }
@@ -207,7 +212,7 @@ function setup() {
     // 06_square row
     for (let x = 400; x < width; x += 640) {
       noStroke();
-      fill(120, 120, 120);
+      fill(orange);
       square(x, y, 80);
     }
   }
@@ -217,7 +222,7 @@ function setup() {
     // 07_square row
     for (let x = 320; x < width; x += 640) {
       noStroke();
-      fill(100, 100, 100);
+      fill(green);
       square(x, y, 80);
     }
   }
@@ -227,7 +232,7 @@ function setup() {
     // 07_square row
     for (let x = 480; x < width; x += 640) {
       noStroke();
-      fill(100, 100, 100);
+      fill(olive);
       square(x, y, 80);
     }
   }
@@ -237,7 +242,7 @@ function setup() {
     // 08_square row
     for (let x = 400; x < width; x += 640) {
       noStroke();
-      fill(170, 170, 170);
+      fill(olive);
       square(x, y, 80);
     }
   }
@@ -247,7 +252,7 @@ function setup() {
     // 08_square row
     for (let x = 560; x < width; x += 640) {
       noStroke();
-      fill(170, 170, 170);
+      fill(orange);
       square(x, y, 80);
     }
   }
@@ -257,7 +262,7 @@ function setup() {
     // 06_square row - triangle
     for (let x = 400; x < width; x += 640) {
       noStroke();
-      fill(220, 0, 200);
+      fill(green);
       triangle03(x, y, 80, 40, 45, 1.415);
     }
   }
@@ -267,7 +272,7 @@ function setup() {
     // 06_square row - triangle
     for (let x = 480; x < width; x += 640) {
       noStroke();
-      fill(220, 0, 200);
+      fill(beige);
       triangle03(x, y, 80, 40, 45, 2.83);
     }
   }
@@ -277,7 +282,7 @@ function setup() {
     // 06_square row
     for (let x = 560; x < width; x += 640) {
       noStroke();
-      fill(120, 120, 120);
+      fill(orange);
       square(x, y, 80);
     }
   }
